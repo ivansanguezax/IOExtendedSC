@@ -88,7 +88,7 @@ h1{
 
 
   /* -----COLRv1-------*/
-.feature h2{
+.feature h3{
     font-size: 100px;
     font-family: "Noto Color Emoji Compat";
 }
@@ -108,4 +108,40 @@ h1{
 
 
 
+ /* -----size-adjust-------*/
 
+ .feature_size{
+    flex-direction: column;
+ }
+
+@font-face {
+    font-family: "Size Adjusted Arial";
+    src: local(Arial);
+    size-adjust: 150%;
+  }
+  
+  h1.adjusted {
+    font-family: "Size Adjusted Arial";
+  }
+  
+  
+ @font-face {
+    font-family: "Arial";
+    src: local(Arial);
+  }
+  
+  
+  h2 {
+    font-size: calc(1rem + 8vw);
+    border: 1px solid #999;
+    position: relative;
+  }
+  
+  h2.adjusted:after {
+    content: "150% larger";
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
