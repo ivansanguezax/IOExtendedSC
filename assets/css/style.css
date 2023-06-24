@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #fff;
+    padding: 1em;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.logo img{
+    width:200px;
+}
+.buttonIO{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em 0;
+    text-align: center;
+}
+.feature_container{
+    padding: 3em;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin: 1em;
+}
+
+
+
+
+/* -----ACCENT COLOR -------*/
+
+:root {
+    accent-color: deeppink;
+}
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      accent-color: hsl(328 100% 65%);
+    }
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  
+  b {
+    color: deeppink;
+  }
+  
+
+
+  /* -----COLOR SCHEME-------*/
+
+  fieldset {
+    background-color: gainsboro;
+  }
+  @media (prefers-color-scheme: dark) {
+    fieldset {
+      background-color: darkslategray;
+    }
+  }
+
+
+  /* -----COLRv1-------*/
+.feature h2{
+    font-size: 100px;
+    font-family: "Noto Color Emoji Compat";
+}
+
+
+ /* -----aspect-ratio-------*/
+
+.feature__ratio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.feature__ratio img{
+    width: 300px;
+    /* aspect-ratio: 1/1; */
+}
+
+
+
+
